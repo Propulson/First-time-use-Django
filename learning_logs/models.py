@@ -24,4 +24,5 @@ class Entry(models.Model):
 
     def __str__(self):
         """return string"""
-        return f'{self.textp[:50]}...'
+        if self.text[:50] >= '50':
+            return f'{self.text[:50]}...'
