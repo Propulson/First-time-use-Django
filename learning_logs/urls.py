@@ -3,6 +3,8 @@ from . import views
 
 app_name = 'learning_logs'
 urlpatterns = [
+    # Page for include new theme
+    path('new_topic/', views.new_topic, name='new_topic'),
     # Homepage
     path('', views.index, name='index'),
     # Page with all topics
