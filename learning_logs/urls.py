@@ -3,6 +3,8 @@ from . import views
 
 app_name = 'learning_logs'
 urlpatterns = [
+    # Page for new comments
+    path('new_entry/<int:topic_id>/', views.new_entry, name='new_entry'),
     # Page for include new theme
     path('new_topic/', views.new_topic, name='new_topic'),
     # Homepage
