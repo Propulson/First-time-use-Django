@@ -33,7 +33,7 @@ def new_topic(request):
 
 def new_entry(request, topic_id):
     """include new acc"""
-    topic = Topic.object.get(id=topic_id)
+    topic = Topic.objects.get(id=topic_id)
     if request.method != 'POST':
         form = EntryForm()
     else:
