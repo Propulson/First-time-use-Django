@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from django.contrlib.auth import login
-from django.contrlib.auth.forms import UserCreationForm
+from django.contrib.auth import login
+from django.contrib.auth.forms import UserCreationForm
 
 
 def register(request):
